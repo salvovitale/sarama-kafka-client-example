@@ -14,7 +14,7 @@ func main() {
 	config.Consumer.Return.Errors = true
 
 	// Specify brokers address. This is default one
-	brokers := []string{"localhost:9092"}
+	brokers := []string{"127.0.0.1:9092"}
 
 	// Create new consumer
 	master, err := sarama.NewConsumer(brokers, config)
